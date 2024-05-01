@@ -1,6 +1,9 @@
 {
 	"pages": [
 		{
+			"path": "pages/start"
+		},
+		{
 			"path": "pages/Consult/Consult",
 			"style": {
 				"navigationBarTitleText": "uni-app"
