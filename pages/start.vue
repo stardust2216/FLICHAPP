@@ -1,6 +1,7 @@
 <template>
   <view class="bgc">
     <view class="icon-container">
+	
       <!-- 遍历一个包含图标信息的数组来动态生成图标和文字 -->
       <view 
         v-for="(icon, index) in icons" 
@@ -9,10 +10,18 @@
         :style="getIconStyle(index)"
         @click="switchToTabPage(icon.pagePath)"
       >
-        <image class="icon" :src="icon.src" />
+		<view :class="{ 'circle': index !== 2, 'feiyi-circle': index === 2 }">
+					<image class="icon" :class="{ 'feiyi-icon': index === 2 }" :src="icon.src" />
+				</view>
+        
         <text class="icon-label">{{ icon.label }}</text>
       </view>
+	  
     </view>
+	<view class="bottom">
+		<image src="../static/首页/feiYi.png" style="width: 80rpx;height: 80rpx;"></image>
+		<text class="bottom-text">让非遗文化触手可及</text>
+	</view>
   </view>
 </template>
 
@@ -22,11 +31,11 @@ export default {
     return {
       // 图标数据，包含图标路径、文字和对应跳转页面的路径
       icons: [
-        { src: '../static/c1.png', label: '趣学资讯', pagePath: 'consult/consult' },
-        { src: '../static/c2.png', label: '趣学课程', pagePath: 'pages/lesson/lesson' },
-        { src: '../static/c5.png', label: '趣学非遗', pagePath: 'pages/index/index' },
-        { src: '../static/c3.png', label: '趣学体验', pagePath: 'pages/experience/experience' },
-        { src: '../static/c4.png', label: '趣学更多', pagePath: 'pages/stillnore/stillnore' }
+        { src: '../static/首页/keCheng.png', label: '趣学课程', pagePath: 'Consult/Consult' },
+        { src: '../static/首页/zixun.png', label: '趣学资讯', pagePath: 'Lesson/Lesson' },
+        { src: '../static/首页/feiYi.png', label: '趣学非遗', pagePath: 'index/index' },
+        { src: '../static/首页/tiYan.png', label: '趣学体验', pagePath: 'experience/experience' },
+        { src: '../static/首页/gengDuo.png', label: '趣学更多', pagePath: 'stillmore/stillmore' }
       ]
     };
   },
@@ -34,11 +43,11 @@ export default {
     // 动态获取每个图标的位置样式
     getIconStyle(index) {
       const positions = [
-        { top: '100rpx', right: '180rpx' },
-        { top: '260rpx', left: '80rpx' },
-        { top: '320rpx', right: '280rpx' },
-        { top: '370rpx', right: '40rpx' },
-        { top: '580rpx' }
+        { top: '180rpx', right: '190rpx' },
+        { top: '340rpx', left: '70rpx' },
+        { top: '410rpx', right: '230rpx' },
+        { top: '450rpx', right: '40rpx' },
+        { top: '740rpx', left: '250rpx'}
       ];
       return positions[index] || {};
     },
@@ -56,11 +65,12 @@ export default {
 
 <style scoped>
 .bgc{
-	background-color: lemonchiffon;
+	background-image: linear-gradient(to bottom, #ADB1A2, #c8bd9a, #e1c38b);
 	height: 100%;
 	width: 100%;
 	position: absolute;
 }
+
 .icon-container {
   display: flex;
   flex-direction: row;
@@ -77,18 +87,61 @@ export default {
   justify-content: center; /* 垂直居中 */
   text-align: center;
 }
-
+.circle {
+  width: 70px; /* 圆圈的宽度 */
+  height: 65px; /* 圆圈的高度 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(111, 111, 111, 0.5);
+  border-radius: 50%; /* 将容器变成圆形 */
+  margin-bottom: 5px; /* 图标和文字间的间距 */
+}
 .icon {
-  width: 60px; /* 图标宽度，根据实际调整 */
-  height: 60px; /* 图标高度，根据实际调整 */
-  margin-bottom: 10px; /* 图标和文字间的间距 */
+  width: 50px; /* 图标宽度，根据实际调整 */
+  height: 45px; /* 图标高度，根据实际调整 */
+  margin-bottom: 5px; /* 图标和文字间的间距 */
   background-color: white;
   border-radius: 50%;
+  
+}
+.feiyi-icon {
+    /* 你的特定样式 */
+    width: 240rpx;
+    height: 230rpx;
+	background-color: transparent;
+	
+  }
+.feiyi-circle {
+  background-color: transparent; /* 使背景透明 */
+}
+@font-face {
+  font-family: 'MyCustomFont';  /* 自定义字体的名称 */
+  src: url('./fonts/XiangJiaoDaJiangJunLingGanTi-2.ttf') format('truetype'),
+       url('./fonts/XiangJiaoDaJiangJunLingGanTi-2.woff') format('woff'),
+       url('./fonts/XiangJiaoDaJiangJunLingGanTi-2.woff2') format('woff2');
 }
 
 .icon-label {
-  font-size: 16px ; 
+  font-size: 16px; 
   color: #333;
-  line-height: 50px; 
+  line-height: 40px; 
+  font-weight: bold;
+}
+.bottom{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.bottom-text {
+	line-height: 40px;
+	font-weight: bold;
+	margin-top:10rpx ;
+	font-size: 16px;
+	color: white;
 }
 </style>
