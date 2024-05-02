@@ -1,4 +1,7 @@
 {
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [
 		{
 			"path": "pages/start"
@@ -62,6 +65,30 @@
 			"style" : 
 			{
 				"navigationBarTitleText" : "交流区",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/Consult/figure",
+			"style" : 
+			{
+				"navigationBarTitleText" : "人物介绍",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/Consult/Information",
+			"style" : 
+			{
+				"navigationBarTitleText" : "综合咨讯",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/Consult/AiChat/AiChat",
+			"style" : 
+			{
+				"navigationBarTitleText" : "AI问答",
 				"enablePullDownRefresh" : false
 			}
 		}

@@ -1,5 +1,8 @@
 <template>
   <view class="bgc">
+	  <view class="bgc-circle">
+		  <image src="../static/首页/circle.png" mode="" style="width: 770rpx;height: 870rpx;"></image>
+	  </view>
     <view class="icon-container">
 	
       <!-- 遍历一个包含图标信息的数组来动态生成图标和文字 -->
@@ -43,11 +46,11 @@ export default {
     // 动态获取每个图标的位置样式
     getIconStyle(index) {
       const positions = [
-        { top: '180rpx', right: '190rpx' },
-        { top: '340rpx', left: '70rpx' },
-        { top: '410rpx', right: '230rpx' },
-        { top: '450rpx', right: '40rpx' },
-        { top: '740rpx', left: '250rpx'}
+        { top: '220rpx', right: '240rpx' },
+        { top: '480rpx', left: '50rpx' },
+        { top: '450rpx', right: '230rpx' },
+        { top: '540rpx', right: '10rpx' },
+        { top: '790rpx', left: '200rpx'}
       ];
       return positions[index] || {};
     },
@@ -93,8 +96,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  box-shadow: 0px 0px 20px rgba(111, 111, 111, 0.5);
+  /* background-color: white; */
+  /* box-shadow: 0px 0px 20px rgba(111, 111, 111, 0.5); */
   border-radius: 50%; /* 将容器变成圆形 */
   margin-bottom: 5px; /* 图标和文字间的间距 */
 }
@@ -102,14 +105,14 @@ export default {
   width: 50px; /* 图标宽度，根据实际调整 */
   height: 45px; /* 图标高度，根据实际调整 */
   margin-bottom: 5px; /* 图标和文字间的间距 */
-  background-color: white;
+  /* background-color: white; */
   border-radius: 50%;
   
 }
 .feiyi-icon {
     /* 你的特定样式 */
-    width: 240rpx;
-    height: 230rpx;
+    width: 250rpx;
+    height: 240rpx;
 	background-color: transparent;
 	
   }
@@ -143,5 +146,8 @@ export default {
 	margin-top:10rpx ;
 	font-size: 16px;
 	color: white;
+}
+.bgc-circle{
+	margin-top: 150rpx;
 }
 </style>
