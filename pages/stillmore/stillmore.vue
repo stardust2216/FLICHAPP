@@ -1,28 +1,52 @@
 <template>
 	<view class="bgc">
-		<view class="IntangibleHeritageMart">
-			<text class="shopText">文创商店</text>
-			<image src="../../static/页面4/1.png" class="shopImg"></image>
-		</view>
-		<view class="FunLearnCustom">
-			<image src="../../static/页面4/2.png" class="CustomImg"></image>
-			<text class="CustoomText">趣学定制</text>
-		</view>
-		<view class="ContactUs">
-			<text class="ContactUsText">预约展览</text>
-			<image src="../../static/页面4/3.png" class="ContactUsImg"></image>
-		</view>
-		<view class="Communication">
-			<text class="CommunicationText">交流区</text>
-			<image src="../../static/页面4/4.png" class="CommunicationImg"></image>
-		</view>
+		<navigator url="/pages/stillmore/IntangibleHeritageMart"  @click="navigateTo">
+		      <view class="IntangibleHeritageMart">
+		        <text class="shopText">非遗商城</text>
+		        <image src="../../static/页面4/1.png" class="shopImg"></image>
+		      </view>
+		    </navigator>
+		<navigator url="/pages/stillmore/FunLearnCustom" @click="navigateTo">
+		      <view class="FunLearnCustom" >
+		        <image src="../../static/页面4/2.png" class="CustomImg"></image>
+		        <text class="CustoomText">趣学定制</text>
+		      </view>
+		    </navigator>
+		<navigator url="/pages/stillmore/ContactUs" @click="navigateTo">
+		      <view  class="ContactUs" >
+		        <text class="ContactUsText">预约展览</text>
+		        <image src="../../static/页面4/3.png" class="ContactUsImg"></image>
+		      </view>
+		    </navigator>
+		<navigator url="/pages/stillmore/Communication"  @click="navigateTo">
+		      <view class="Communication">
+		        <text class="CommunicationText">交流区</text>
+		        <image src="../../static/页面4/4.png" class="CommunicationImg"></image>
+		      </view>
+		    </navigator>
 	</view>
 </template>
 
 <script>
-	export default {
-		
-	}
+export default {
+  methods: {
+    navigateTo(event) {
+      // 从事件对象中获取url，并执行页面跳转
+      const url = event.currentTarget.dataset.url;
+      if (url) {
+        uni.navigateTo({
+          url: url,
+          success: function () {
+            console.log('跳转成功');
+          },
+          fail: function (err) {
+            console.error('跳转失败', err);
+          }
+        });
+      }
+    }
+  }
+};
 </script>
 
 <style scoped>
