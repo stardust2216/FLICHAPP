@@ -1,0 +1,81 @@
+
+.bgc[data-v-d264e651] {
+		background-image: url('../static/strat-bgc.jpg');
+		background-size: cover; 
+		height: 100%;
+		width: 100%;
+		position: absolute;
+}
+.icon-container[data-v-d264e651] {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		padding: 10px;
+}
+.imgIcon[data-v-d264e651] {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+}
+.circle[data-v-d264e651] {
+		width: 70px;
+		height: 65px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		margin-bottom: 5px;
+}
+.icon[data-v-d264e651] {
+		width: 50px;
+		height: 45px;
+		margin-bottom: 5px;
+		border-radius: 50%;
+}
+.feiyi-icon[data-v-d264e651] {
+		width: 7.8125rem;
+		height: 7.5rem;
+		background-color: transparent;
+}
+.feiyi-circle[data-v-d264e651] {
+		background-color: transparent;
+}
+@font-face {
+		font-family: 'CustomFont';
+		src: url('../static/fonts/XiangJiaoDaJiangJunLingGanTi-2.ttf') format('truetype');
+}
+.icon-label[data-v-d264e651] {
+		font-family: 'CustomFont';
+		font-size: 20px;
+		color: #696a60;
+		line-height: 40px;
+}
+
+	/* 单独为趣学非遗文字设置样式 */
+.feiyi-label[data-v-d264e651] {
+		font-size: 25px;
+		color: black; 
+		font-weight: normal;
+}
+.bottom[data-v-d264e651] {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+.bottom-text[data-v-d264e651] {
+		line-height: 40px;
+		font-weight: bold;
+		margin-top: 0.3125rem;
+		font-size: 16px;
+		color: white;
+}
+.bgc-circle[data-v-d264e651] {
+		margin-top: 4.6875rem;
+}

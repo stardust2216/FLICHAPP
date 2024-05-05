@@ -15,7 +15,7 @@
 		<view class="figure">
 			<image src="../../static/页面4/4.png" mode="aspectfit" class="heritage-image"></image>
 			<view class="content">
-				<text class="title">非遗介绍</text>
+				<text class="title">非遗介绍(人物)</text>
 				<text>温，广西壮族自治区南宁市地方传统戏剧，</text>
 			</view>
 		</view>
@@ -60,8 +60,9 @@
 		height: 100%;
 		width: 100%;
 		position: absolute;
-		background-color: #fff;
-		padding-top: 20rpx;
+		background-image: url('../../static/background-img.png');
+		background-size: cover; 
+		padding-top: 30rpx;
 	}
 
 	.Information {
@@ -76,12 +77,17 @@
 		border-radius: 10rpx;
 		width: 700rpx;
 	}
+	@font-face {
+		font-family: 'MyCustomFont';
+		src: url('../static/fonts/SourceHanSerifCN-Light-5.otf') format('opentype');
+	}
 
 	.content {
 		margin-left: 25rpx;
 	}
 
 	.title {
+		font-family: 'MyCustomFont';
 		font-size: 24px;
 		margin-bottom: 20px;
 		color: #b29f89;
@@ -93,6 +99,7 @@
 		line-height: 1.6;
 		margin-bottom: 10px;
 		color: #b29f89;
+		font-family: 'MyCustomFont';
 	}
 
 	.heritage-image {
@@ -101,6 +108,7 @@
 		/* 根据需要调整图片宽度 */
 		margin-top: 20px;
 		margin-left: -15rpx;
+	
 	}
 
 	.figure {
@@ -148,7 +156,7 @@
 		padding: 15rpx;
 		margin-bottom: 10px;
 		color: #ceb17f;
-		
+		font-family: 'MyCustomFont';
 	}
 
 	.AiChatImg {

@@ -1,4 +1,3 @@
-
 // #ifndef VUE3
 import Vue from 'vue'
 import App from './App'
@@ -7,6 +6,9 @@ Vue.use(uView)
 Vue.config.productionTip = false
 
 App.mpType = 'app'
+// 第三方字体库调用
+const font = require('./static/fonts/font.js')
+font.loadFont(); //下载字体
 
 const app = new Vue({
     ...App

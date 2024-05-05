@@ -1,0 +1,108 @@
+/* 水平间距 */
+/* 水平间距 */
+body {
+  height: 100vh;
+  background-color: #efefef !important;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+body > uni-view:nth-child(n+2) {
+  margin-top: 0.5rem;
+}
+.title {
+  padding-left: 0.8125rem;
+}
+.swiper {
+  padding-left: 0.8125rem;
+}
+.swiper uni-swiper {
+  height: 13.75rem;
+  background-color: skyblue;
+}
+.swiper uni-swiper uni-swiper-item {
+  background-color: lightsalmon;
+}
+.swiper uni-swiper uni-swiper-item .TT {
+  height: 11.875rem;
+  margin-top: 0.625rem;
+  margin-right: 0.8125rem;
+  background-color: blueviolet;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+}
+.swiper uni-swiper uni-swiper-item .TT uni-view {
+  padding: 0.8125rem 0.8125rem 0 0.8125rem;
+}
+.swiper uni-swiper uni-swiper-item .T1 {
+  height: 0.9375rem;
+  margin-bottom: 0.3125rem;
+}
+.swiper uni-swiper uni-swiper-item .T1 uni-text {
+  font-size: 1.25rem;
+  color: #FFF;
+}
+.swiper uni-swiper uni-swiper-item .T2 {
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+}
+.swiper uni-swiper uni-swiper-item .T2 uni-navigator {
+  font-size: 0.5625rem;
+  background-color: #FFF;
+  width: 2.8125rem;
+  height: 0.9375rem;
+  border-radius: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper uni-swiper uni-swiper-item .T3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.swiper uni-swiper uni-swiper-item .T3 uni-image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.9375rem;
+}
+.good-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9375rem 0.5rem;
+  border-radius: 0.3125rem;
+}
+.good-nav uni-view {
+  display: flex;
+  flex-direction: column;
+}
+.good-nav uni-view uni-image {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 60px;
+}
+.good-nav uni-view uni-text {
+  font-size: 0.625rem;
+  width: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.data {
+  padding-left: 0.8125rem;
+}
+.content {
+  padding: 0.75rem 0.8125rem;
+}
+.content uni-image {
+  width: 100%;
+  border-radius: 16px;
+}
+.content uni-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

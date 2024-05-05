@@ -2,9 +2,11 @@
 	"easycom": {
 		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
 	},
-	"pages": [
-		{
-			"path": "pages/start"
+	"pages": [{
+			"path": "pages/start",
+			"style": {
+				"navigationStyle": "custom" // 设置为自定义导航栏，这样可以让整个页面变成一个自定义的导航栏
+			}
 		},
 		{
 			"path": "pages/Consult/Consult",
@@ -33,62 +35,79 @@
 		{
 			"path": "pages/stillmore/stillmore",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom"
 			}
 		},
 		{
-			"path" : "pages/stillmore/IntangibleHeritageMart",
+			"path": "pages/stillmore/IntangibleHeritageMart",
+			"style": {
+				"navigationBarTitleText": "非遗商城",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/stillmore/FunLearnCustom",
+			"style": {
+				"navigationBarTitleText": "趣学定制",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/stillmore/ContactUs",
+			"style": {
+				"navigationBarTitleText": "联系我们",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/stillmore/Communication",
+			"style": {
+				"navigationBarTitleText": "交流区",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/Consult/figure",
+			"style": {
+				"navigationBarTitleText": "人物介绍",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/Consult/Information",
+			"style": {
+				"navigationBarTitleText": "综合咨讯",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/Consult/AiChat/AiChat",
+			"style": {
+				"navigationBarTitleText": "AI问答",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/experience/AR",
 			"style" : 
 			{
-				"navigationBarTitleText" : "非遗商城",
+				"navigationBarTitleText" : "AR体验",
 				"enablePullDownRefresh" : false
 			}
 		},
 		{
-			"path" : "pages/stillmore/FunLearnCustom",
+			"path" : "pages/experience/challenge",
 			"style" : 
 			{
-				"navigationBarTitleText" : "趣学定制",
+				"navigationBarTitleText" : "线上闯关",
 				"enablePullDownRefresh" : false
 			}
 		},
 		{
-			"path" : "pages/stillmore/ContactUs",
+			"path" : "pages/experience/study",
 			"style" : 
 			{
-				"navigationBarTitleText" : "联系我们",
-				"enablePullDownRefresh" : false
-			}
-		},
-		{
-			"path" : "pages/stillmore/Communication",
-			"style" : 
-			{
-				"navigationBarTitleText" : "交流区",
-				"enablePullDownRefresh" : false
-			}
-		},
-		{
-			"path" : "pages/Consult/figure",
-			"style" : 
-			{
-				"navigationBarTitleText" : "人物介绍",
-				"enablePullDownRefresh" : false
-			}
-		},
-		{
-			"path" : "pages/Consult/Information",
-			"style" : 
-			{
-				"navigationBarTitleText" : "综合咨讯",
-				"enablePullDownRefresh" : false
-			}
-		},
-		{
-			"path" : "pages/Consult/AiChat/AiChat",
-			"style" : 
-			{
-				"navigationBarTitleText" : "AI问答",
+				"navigationBarTitleText" : "线下研学",
 				"enablePullDownRefresh" : false
 			}
 		}
@@ -103,43 +122,42 @@
 		}
 	},
 	"tabBar": {
-			"color": "#333333",
-			"selectedColor": "#333333",
-			"borderStyle": "black",
-			"backgroundColor": "#ffffff",
-			"list": [
-				{
-					"pagePath": "pages/Consult/Consult",
-					"iconPath": "static/趣学资讯.png",
-					"selectedIconPath": "static/趣学资讯2.png",
-					"text": "趣学资讯"
-				},
-				{
-					"pagePath": "pages/Lesson/Lesson",
-					"iconPath": "static/趣学课程.png",
-					"selectedIconPath": "static/趣学课程2.png",
-					"text": "趣学课程"
-				},
-				{
-					"pagePath": "pages/index/index",
-					"iconPath": "static/趣学非遗.png",
-					"selectedIconPath": "static/趣学非遗2.png",
-					"text": "趣学非遗"
-				},
-				{
-					"pagePath": "pages/experience/experience",
-					"iconPath": "static/趣学体验.png",
-					"selectedIconPath": "static/趣学体验2.png",
-					"text": "趣学体验"
-				},
-				{
-					"pagePath": "pages/stillmore/stillmore",
-					"iconPath": "static/趣学更多.png",
-					"selectedIconPath": "static/趣学更多2.png",
-					"text": "趣学更多"
-				}
-			]
-		}
+		"color": "#333333",
+		"selectedColor": "#333333",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/Consult/Consult",
+				"iconPath": "static/趣学资讯.png",
+				"selectedIconPath": "static/趣学资讯2.png",
+				"text": "趣学资讯"
+			},
+			{
+				"pagePath": "pages/Lesson/Lesson",
+				"iconPath": "static/趣学课程.png",
+				"selectedIconPath": "static/趣学课程2.png",
+				"text": "趣学课程"
+			},
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/趣学非遗.png",
+				"selectedIconPath": "static/趣学非遗2.png",
+				"text": "趣学非遗"
+			},
+			{
+				"pagePath": "pages/experience/experience",
+				"iconPath": "static/趣学体验.png",
+				"selectedIconPath": "static/趣学体验2.png",
+				"text": "趣学体验"
+			},
+			{
+				"pagePath": "pages/stillmore/stillmore",
+				"iconPath": "static/趣学更多.png",
+				"selectedIconPath": "static/趣学更多2.png",
+				"text": "趣学更多"
+			}
+		]
 	}
-	
+}
+
 }

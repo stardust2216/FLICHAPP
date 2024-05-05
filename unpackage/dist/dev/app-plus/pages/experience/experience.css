@@ -1,0 +1,117 @@
+/* 水平间距 */
+/* 水平间距 */
+.bgc {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("../../static/background-img.png");
+  background-size: cover;
+  padding-top: 0.9375rem;
+}
+.box1 {
+  width: 21.25rem;
+  background-color: #f7f3e8;
+  box-shadow: 0 8px 4px #e5dcd1, 6px 8px 4px #e5dcd1;
+  height: 8.4375rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0.9375rem;
+  border-radius: 0.3125rem;
+}
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../static/fonts/SourceHanSerifCN-Light-5.otf") format("opentype");
+}
+.boxTitle {
+  font-family: "MyCustomFont";
+  width: 20.625rem;
+}
+.boxTitle uni-image {
+  width: 4.375rem;
+  height: 2.34375rem;
+  float: left;
+}
+.boxTitle uni-text {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 0.625rem;
+  color: #41210c;
+}
+.boxText {
+  font-family: "MyCustomFont";
+  margin-top: 1.5625rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.boxText uni-image {
+  width: 0.625rem;
+  height: 0.625rem;
+  margin-top: 0.46875rem;
+}
+.boxText uni-text {
+  font-size: 1rem;
+  margin-top: 0.15625rem;
+  color: #917559;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+.box2 {
+  width: 21.25rem;
+  background-color: #f7f3e8;
+  box-shadow: 0 8px 4px #e5dcd1, 6px 8px 4px #e5dcd1;
+  height: 8.4375rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0.9375rem;
+  border-radius: 0.3125rem;
+  margin-top: 2.5rem;
+}
+.box3 {
+  width: 21.25rem;
+  background-color: #f7f3e8;
+  box-shadow: 0 8px 4px #e5dcd1, 6px 8px 4px #e5dcd1;
+  height: 8.4375rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0.9375rem;
+  border-radius: 0.3125rem;
+  margin-top: 3.125rem;
+}
+.box2Text {
+  font-family: "MyCustomFont";
+  margin-top: 1.5625rem;
+}
+.box2Text uni-image {
+  width: 0.625rem;
+  height: 0.625rem;
+  margin-top: 0.46875rem;
+}
+.box2Text uni-text {
+  font-size: 1rem;
+  margin-top: 0.3125rem;
+  margin-left: 0.78125rem;
+  color: #917559;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+.box3Text {
+  font-family: "MyCustomFont";
+  margin-top: 1.5625rem;
+}
+.box3Text uni-image {
+  width: 0.625rem;
+  height: 0.625rem;
+  margin-top: 0.46875rem;
+}
+.box3Text uni-text {
+  font-size: 1rem;
+  margin-top: 0.3125rem;
+  margin-left: 0.78125rem;
+  color: #917559;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
