@@ -1,0 +1,24 @@
+/* 水平间距 */
+/* 水平间距 */
+.navbar {
+  z-index: 10;
+}
+.navbar .titleBar .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 26rpx;
+  float: left;
+}
+.navbar .titleBar .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-right: 180rpx;
+}
+.navbar .titleBar .right image {
+  width: 34rpx;
+  height: 34rpx;
+  margin-right: 20rpx;
+}

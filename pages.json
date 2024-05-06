@@ -11,25 +11,25 @@
 		{
 			"path": "pages/Consult/Consult",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom" // 使用自定义导航栏，系统会关闭默认的原生导航栏
 			}
 		},
 		{
 			"path": "pages/Lesson/Lesson",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom" // 使用自定义导航栏，系统会关闭默认的原生导航栏
 			}
 		},
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom" // 使用自定义导航栏，系统会关闭默认的原生导航栏
 			}
 		},
 		{
 			"path": "pages/experience/experience",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom" // 使用自定义导航栏，系统会关闭默认的原生导航栏
 			}
 		},
 		{

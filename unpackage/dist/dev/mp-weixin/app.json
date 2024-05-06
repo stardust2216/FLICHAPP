@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/start",
+    "pages/Consult/Consult",
+    "pages/Lesson/Lesson",
+    "pages/index/index",
+    "pages/experience/experience",
+    "pages/stillmore/stillmore",
+    "pages/stillmore/IntangibleHeritageMart",
+    "pages/stillmore/FunLearnCustom",
+    "pages/stillmore/ContactUs",
+    "pages/stillmore/Communication",
+    "pages/Consult/figure",
+    "pages/Consult/Information",
+    "pages/Consult/AiChat/AiChat",
+    "pages/experience/AR",
+    "pages/experience/challenge",
+    "pages/experience/study"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#333333",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/Consult/Consult",
+        "iconPath": "static/趣学资讯.png",
+        "selectedIconPath": "static/趣学资讯2.png",
+        "text": "趣学资讯"
+      },
+      {
+        "pagePath": "pages/Lesson/Lesson",
+        "iconPath": "static/趣学课程.png",
+        "selectedIconPath": "static/趣学课程2.png",
+        "text": "趣学课程"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/趣学非遗.png",
+        "selectedIconPath": "static/趣学非遗2.png",
+        "text": "趣学非遗"
+      },
+      {
+        "pagePath": "pages/experience/experience",
+        "iconPath": "static/趣学体验.png",
+        "selectedIconPath": "static/趣学体验2.png",
+        "text": "趣学体验"
+      },
+      {
+        "pagePath": "pages/stillmore/stillmore",
+        "iconPath": "static/趣学更多.png",
+        "selectedIconPath": "static/趣学更多2.png",
+        "text": "趣学更多"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

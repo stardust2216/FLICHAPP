@@ -1,0 +1,117 @@
+/* 水平间距 */
+/* 水平间距 */
+.bgc {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("../../static/background-img.png");
+  background-size: cover;
+  padding-top: 30rpx;
+}
+.box1 {
+  width: 680rpx;
+  background-color: #f7f3e8;
+  box-shadow: 0 8px 4px #e5dcd1, 6px 8px 4px #e5dcd1;
+  height: 270rpx;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../static/fonts/SourceHanSerifCN-Light-5.otf") format("opentype");
+}
+.boxTitle {
+  font-family: "MyCustomFont";
+  width: 660rpx;
+}
+.boxTitle image {
+  width: 140rpx;
+  height: 75rpx;
+  float: left;
+}
+.boxTitle text {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20rpx;
+  color: #41210c;
+}
+.boxText {
+  font-family: "MyCustomFont";
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.boxText image {
+  width: 20rpx;
+  height: 20rpx;
+  margin-top: 15rpx;
+}
+.boxText text {
+  font-size: 32rpx;
+  margin-top: 5rpx;
+  color: #917559;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+.box2 {
+  width: 680rpx;
+  background-color: #f7f3e8;
+  box-shadow: 0 8px 4px #e5dcd1, 6px 8px 4px #e5dcd1;
+  height: 270rpx;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  border-radius: 10rpx;
+  margin-top: 80rpx;
+}
+.box3 {
+  width: 680rpx;
+  background-color: #f7f3e8;
+  box-shadow: 0 8px 4px #e5dcd1, 6px 8px 4px #e5dcd1;
+  height: 270rpx;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  border-radius: 10rpx;
+  margin-top: 100rpx;
+}
+.box2Text {
+  font-family: "MyCustomFont";
+  margin-top: 50rpx;
+}
+.box2Text image {
+  width: 20rpx;
+  height: 20rpx;
+  margin-top: 15rpx;
+}
+.box2Text text {
+  font-size: 32rpx;
+  margin-top: 10rpx;
+  margin-left: 25rpx;
+  color: #917559;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+.box3Text {
+  font-family: "MyCustomFont";
+  margin-top: 50rpx;
+}
+.box3Text image {
+  width: 20rpx;
+  height: 20rpx;
+  margin-top: 15rpx;
+}
+.box3Text text {
+  font-size: 32rpx;
+  margin-top: 10rpx;
+  margin-left: 25rpx;
+  color: #917559;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}

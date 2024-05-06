@@ -1,4 +1,7 @@
 <template>
+	<!-- 导航栏 -->
+	<customTabBar Title="趣学体验"></customTabBar>
+	
 	<view class="bgc">
 		<view class="box1" @click="navigateToPage('AR体验')">
 			<view class="boxTitle">
@@ -34,7 +37,11 @@
 </template>
 
 <script>
+	import customTabBar from "../../components/customTabBar.vue"
 	export default {
+		components: {
+		      customTabBar
+		},
 		methods: {
 			navigateToPage(pageName) {
 				// 根据页面名称跳转到不同的页面
@@ -63,7 +70,6 @@
 </script>
 
 <style lang="scss">
-	
 	.bgc {
 		height: 100%;
 		width: 100%;

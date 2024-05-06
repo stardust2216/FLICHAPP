@@ -1,4 +1,6 @@
 <template>
+	<!-- 导航栏 -->
+	<customTabBar Title="趣学资讯"></customTabBar>
 	<view class="bgc">
 		<view class="seach">
 			<uni-search-bar placeholder="请输入搜索内容" @confirm="search" @cancel="cancel" cancel-text="取消">
@@ -32,7 +34,11 @@
 </template>
 
 <script>
+	import customTabBar from "../../components/customTabBar.vue"
 	export default {
+		components: {
+		      customTabBar
+		},
 		data() {
 			return {
 

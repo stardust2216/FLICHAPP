@@ -1,4 +1,10 @@
 <template>
+	<!-- 导航栏 -->
+	<customTabBar Title="趣学非遗"></customTabBar>
+	
+	<!-- 背景图 -->
+	<image class="bg" src='../../static/background-img.png'></image>
+	
 	<!-- 标题 -->
 	<view class="title">
 	  <text>城市非遗</text>
@@ -93,27 +99,27 @@
 	<!-- 导航栏 -->
 	<view class="good-nav">
 	  <view>
-	    <image src="../../static/页面1/1.png" mode=""/>
-	    <text>传统手工艺</text>
+	    <image src="../../static/页面1/1huanban1.png" mode=""/>
+	    <text>传统手艺</text>
 	  </view>
 	  <view>
-	    <image src="../../static/页面1/2.png" mode=""/>
+	    <image src="../../static/页面1/2hauban2.png" mode=""/>
 	    <text>传统音乐</text>
 	  </view>
 	  <view>
-	    <image src="../../static/页面1/3.png" mode=""/>
+	    <image src="../../static/页面1/3huabna3.png" mode=""/>
 	    <text>传统戏剧</text>
 	  </view>
 	  <view>
-	    <image src="../../static/页面1/4.png" mode=""/>
+	    <image src="../../static/页面1/4huaban4.png" mode=""/>
 	    <text>传统美术</text>
 	  </view>
 	  <view>
-	    <image src="../../static/页面1/5.png" mode=""/>
+	    <image src="../../static/页面1/5huaban5.png" mode=""/>
 	    <text>传统技艺</text>
 	  </view>
 	  <view>
-	    <image src="../../static/页面1/6.png" mode=""/>
+	    <image src="../../static/页面1/6huaban6.png" mode=""/>
 	    <text>传统民俗</text>
 	  </view>
 	</view>
@@ -133,29 +139,35 @@
 </template>
 
 <script>
+	import customTabBar from "../../components/customTabBar.vue"
 	export default {
-		
+		components: {
+		      customTabBar
+		},
 	}
 </script>
 
 <style lang="scss">
 	page {
 	  height: 100vh;
-	  background-color: #efefef !important;
 	  padding: 16rpx;
 	  box-sizing: border-box;
 	  display: flex;
 	  flex-direction: column;
+	}
 	
-	  > view {
-	    &:nth-child(n + 2) {
-	      margin-top: 16rpx;
-	    }
-	  }
+	.bg {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		z-index: -999;
 	}
 	
 	.title {
-	  padding-left: 26rpx;
+		padding-left: 26rpx;
 	}
 	
 	
@@ -251,7 +263,6 @@
 	  image {
 	    width: 100%;
 	    border-radius: 16px;
-	    
 	  }
 	  text {
 	    display: flex;

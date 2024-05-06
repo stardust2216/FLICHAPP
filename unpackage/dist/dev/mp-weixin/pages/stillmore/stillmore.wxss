@@ -1,0 +1,104 @@
+
+.bgc.data-v-063c1d97{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		background-image: url('../../static/background-img.png');
+		background-size: cover; 
+		padding-top: 100rpx;
+}
+.square.data-v-063c1d97{
+		background-color: #f6f4e6;
+		border-radius: 40rpx;
+		height: 80vh;
+		padding-top: 30rpx;
+}
+.IntangibleHeritageMart.data-v-063c1d97{
+		background-color: #d18355;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 200rpx;
+		width: 700rpx;
+		margin: auto;
+		border-radius: 10px;
+}
+@font-face {
+		font-family: 'MyCustomFont';
+		src: url('../static/fonts/SourceHanSerifCN-Light-5.otf') format('opentype');
+}
+.shopImg.data-v-063c1d97{
+		height: 110rpx;
+		width: 120rpx;
+		padding: 60rpx;
+}
+.shopText.data-v-063c1d97{
+		margin:120rpx 80rpx;
+		font-size: 25px;
+		font-weight: bolder;
+		font-family: 'MyCustomFont';
+}
+.FunLearnCustom.data-v-063c1d97{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 200rpx;
+		width: 300rpx;
+		background-color: #deb863;
+		margin:25rpx ;
+		border-radius: 10px;
+}
+.CustomImg.data-v-063c1d97{
+		width: 110rpx;
+		height: 110rpx;
+		padding: 15rpx;
+}
+.CustoomText.data-v-063c1d97{
+		font-size: 20px;
+		font-weight: bolder;
+		font-family: 'MyCustomFont';
+}
+.ContactUs.data-v-063c1d97{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color:#5b9c96 ;
+		border-radius: 10px;
+		height: 200rpx;
+		width: 380rpx;
+		margin-top: -225rpx;
+		margin-left: 350rpx;
+}
+.ContactUsImg.data-v-063c1d97{
+		width: 110rpx;
+		height: 110rpx;
+		padding: 40rpx;
+}
+.ContactUsText.data-v-063c1d97{
+		font-size: 22px;
+		font-weight: bolder;
+		margin:120rpx 10rpx;
+		font-family: 'MyCustomFont';
+}
+.Communication.data-v-063c1d97{
+		background-color: #aaff7f;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 200rpx;
+		width: 700rpx;
+		margin: auto;
+		margin-top: 20rpx;
+		border-radius: 10px;
+}
+.CommunicationImg.data-v-063c1d97{
+		height: 110rpx;
+		width: 120rpx;
+		padding: 60rpx;
+}
+.CommunicationText.data-v-063c1d97{
+		margin:120rpx 80rpx;
+		font-size: 25px;
+		font-weight: bolder;
+		font-family: 'MyCustomFont';
+}
