@@ -37,7 +37,7 @@
 	import customTabBar from "../../components/customTabBar.vue"
 	export default {
 		components: {
-		      customTabBar
+			customTabBar
 		},
 		data() {
 			return {
@@ -63,11 +63,6 @@
 
 <style lang="scss">
 	.bgc {
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		background-image: url('../../static/background-img.png');
-		background-size: cover; 
 		padding-top: 30rpx;
 	}
 
@@ -83,6 +78,7 @@
 		border-radius: 10rpx;
 		width: 700rpx;
 	}
+
 	@font-face {
 		font-family: 'MyCustomFont';
 		src: url('../static/fonts/SourceHanSerifCN-Light-5.otf') format('opentype');
@@ -114,7 +110,7 @@
 		/* 根据需要调整图片宽度 */
 		margin-top: 20px;
 		margin-left: -15rpx;
-	
+
 	}
 
 	.figure {
@@ -145,7 +141,7 @@
 		align-items: center;
 		/* 垂直居中 */
 		justify-content: flex-end;
-		
+
 	}
 
 	.AIcontent {

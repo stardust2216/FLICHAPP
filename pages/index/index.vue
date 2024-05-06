@@ -1,4 +1,5 @@
 <template>
+	
 	<!-- 导航栏 -->
 	<customTabBar Title="趣学非遗"></customTabBar>
 	
@@ -162,7 +163,10 @@
 	  	  	}
 	  	}
 	}
-	
+	@font-face {
+		font-family: 'MyCustomFont';
+		src: url('../static/fonts/SourceHanSerifCN-Light-5.otf') format('opentype');
+	}
 	.bg {
 		position: absolute;
 		left: 0;
@@ -174,6 +178,8 @@
 	}
 	
 	.title {
+		font-family: 'MyCustomFont';
+		font-weight: bold;
 	}
 	
 	
@@ -201,7 +207,8 @@
 	        text {
 	          font-size: 40rpx;
 	          color: #FFF;
-			  
+			  font-weight: bolder;
+			  font-family: 'MyCustomFont';
 	        }
 	      }
 	
@@ -216,6 +223,8 @@
 				height: 30rpx;
 				border-radius: 10px;
 				font-weight: bold;
+				font-family: 'MyCustomFont';
+				margin-top: 20rpx;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -252,6 +261,7 @@
 			text {
 				font-size: 20rpx;
 				width: 100rpx;
+				font-family: 'MyCustomFont';
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -260,6 +270,7 @@
 	}
 	
 	.data {
+		font-family: 'MyCustomFont';
 	}
 	
 	.content { 
@@ -268,6 +279,7 @@
 			border-radius: 16px;
 		}
 		text {
+			font-family: 'MyCustomFont';
 			display: flex;
 			justify-content: center;
 			align-items: center;

@@ -91,7 +91,7 @@ export default {
 
 <style scoped>
 	.bgc {
-		background-image: url('../static/strat-bgc.jpg');
+		background-image: url('https://www.freeimg.cn/i/2024/05/06/6638eb90e4db6.jpg');
 		background-size: cover; 
 		height: 100%;
 		width: 100%;

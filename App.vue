@@ -24,7 +24,13 @@
 	page {
 		background-color: #f5f5f5;
 	}
-
+	.bgc{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		background-image: url('https://www.freeimg.cn/i/2024/05/06/6638eb8ebd78a.png');
+		background-size: cover;
+	}
 	
 	/* #endif */
 	.example-info {
