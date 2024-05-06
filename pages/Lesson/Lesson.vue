@@ -58,10 +58,17 @@
 <style lang="scss">
 	page {
 	  height: 100vh;
-	  padding: 16rpx;
 	  box-sizing: border-box;
 	  display: flex;
 	  flex-direction: column;
+	  
+	  > view {
+	  	&:nth-child(n + 2) {
+	  		margin-left: 42rpx;
+	  		margin-right: 42rpx;
+	  		margin-top: 12rpx;
+	    	}
+		}
 	}
 	
 	.bg {
@@ -76,7 +83,6 @@
 	
 	
 	.top {
-		margin: 26rpx;
 		position: relative;
 		.top-image {
 			width: 100%;

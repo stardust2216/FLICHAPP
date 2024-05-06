@@ -41,26 +41,37 @@
 </script>
 
 <style lang="scss">
+	@font-face {
+		font-family: 'MyCustomFont';
+		src: url('../static/fonts/XiangJiaoDaJiangJunLingGanTi-2.ttf') format('opentype');
+	}
+	
     .navbar {
         z-index: 10;
+		.statusBar {
+		}
         .titleBar {
+			height: 70rpx;
+			display: flex;
+			justify-content: space-between;
+			align-items: center; /* 垂直居中 */
             .left {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-                margin-left: 26rpx;
+                margin-left: 42rpx;
                 float: left;
+				text {
+					font-family: 'MyCustomFont';
+					color: #696a60;
+					font-size: 40rpx;
+				}
             }
             .right {
 				display: flex;
-				justify-content: center;
-				align-items: center;
-                float: right;
-                margin-right: 180rpx;
+				align-items: center; /* 垂直居中 */
+                margin-right: 190rpx;
                 image {
                     width: 34rpx;
                     height: 34rpx;
-                    margin-right: 20rpx;
+                    margin-right: 25rpx;
                 }
             }
         }

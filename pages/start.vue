@@ -28,12 +28,12 @@ export default {
 			icons: [{
 					src: '../static/首页/keCheng.png',
 					label: '趣学课程',
-					pagePath: 'Consult/Consult'
+					pagePath: 'Lesson/Lesson'
 				},
 				{
 					src: '../static/首页/zixun.png',
 					label: '趣学资讯',
-					pagePath: 'Lesson/Lesson'
+					pagePath: 'Consult/Consult'
 				},
 				{
 					src: '../static/首页/feiYi.png',

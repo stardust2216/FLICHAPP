@@ -150,10 +150,17 @@
 <style lang="scss">
 	page {
 	  height: 100vh;
-	  padding: 16rpx;
 	  box-sizing: border-box;
 	  display: flex;
 	  flex-direction: column;
+	  
+	> view {
+		&:nth-child(n + 2) {
+			margin-left: 42rpx;
+			margin-right: 42rpx;
+			margin-top: 12rpx;
+	  	  	}
+	  	}
 	}
 	
 	.bg {
@@ -167,13 +174,11 @@
 	}
 	
 	.title {
-		padding-left: 26rpx;
 	}
 	
 	
 	.swiper {
-	  padding-left: 26rpx;
-	  swiper {
+		swiper {
 	    height: 440rpx;
 	    background-color: skyblue;
 	    swiper-item {
@@ -205,15 +210,15 @@
 	        flex-direction: row;
 	        height: 80rpx;
 	        navigator {
-	          font-size: 18rpx;
-	          background-color: #FFF;
-	          width: 90rpx;
-	          height: 30rpx;
-	          border-radius: 10px;
-	          font-weight: bold;
-	          display: flex;
-	          justify-content: center;
-	          align-items: center;
+				font-size: 18rpx;
+				background-color: #FFF;
+				width: 90rpx;
+				height: 30rpx;
+				border-radius: 10px;
+				font-weight: bold;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 	        }
 	      }
 	
@@ -232,42 +237,40 @@
 	}
 	
 	.good-nav {
-	  display: flex;
-	  justify-content: space-between;
-	  padding: 30rpx 16rpx;
-	  border-radius: 10rpx;
-	  view {
-	    display: flex;
-	    flex-direction: column;
-	    image {
-	      width: 100rpx;
-	      height: 100rpx;
-	      border-radius: 60px;
-	    }
-	    text {
-	      font-size: 20rpx;
-	      width: 100rpx;
-	      display: flex;
-	      justify-content: center;
-	      align-items: center;
-	    }
-	  }
+		display: flex;
+		justify-content: space-between;
+		padding: 30rpx 16rpx;
+		border-radius: 10rpx;
+		view {
+		display: flex;
+		flex-direction: column;
+		image {
+			width: 100rpx;
+			height: 100rpx;
+			border-radius: 60px;
+		}
+			text {
+				font-size: 20rpx;
+				width: 100rpx;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
 	}
 	
 	.data {
-	  padding-left: 26rpx;
 	}
 	
-	.content {
-	  padding: 24rpx 26rpx;
-	  image {
-	    width: 100%;
-	    border-radius: 16px;
-	  }
-	  text {
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
-	  }
+	.content { 
+		image {
+			width: 100%;
+			border-radius: 16px;
+		}
+		text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 </style>

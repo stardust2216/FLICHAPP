@@ -2,10 +2,14 @@
 /* 水平间距 */
 page {
   height: 100vh;
-  padding: 16rpx;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+}
+page > view:nth-child(n+2) {
+  margin-left: 42rpx;
+  margin-right: 42rpx;
+  margin-top: 12rpx;
 }
 .bg {
   position: absolute;
@@ -15,12 +19,6 @@ page {
   width: 100%;
   height: 100%;
   z-index: -999;
-}
-.title {
-  padding-left: 26rpx;
-}
-.swiper {
-  padding-left: 26rpx;
 }
 .swiper swiper {
   height: 440rpx;
@@ -95,12 +93,6 @@ page {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.data {
-  padding-left: 26rpx;
-}
-.content {
-  padding: 24rpx 26rpx;
 }
 .content image {
   width: 100%;

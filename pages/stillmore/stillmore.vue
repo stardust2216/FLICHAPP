@@ -1,4 +1,7 @@
 <template>
+	<!-- 导航栏 -->
+	<customTabBar Title="趣学更多"></customTabBar>
+	
 	<view class="bgc">
 		<view class="square">
 			<navigator url="/pages/stillmore/IntangibleHeritageMart"  @click="navigateTo">
@@ -31,8 +34,12 @@
 </template>
 
 <script>
+	import customTabBar from "../../components/customTabBar.vue"
 export default {
-  methods: {
+	components: {
+		  customTabBar
+	},
+	methods: {
     navigateTo(event) {
       // 从事件对象中获取url，并执行页面跳转
       const url = event.currentTarget.dataset.url;
