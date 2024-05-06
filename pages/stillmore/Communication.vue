@@ -1,7 +1,8 @@
 <template>
-	<view>
+	<view class="bgc">
 		
 	</view>
+  
 </template>
 
 <script>
@@ -17,6 +18,6 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 
 </style>

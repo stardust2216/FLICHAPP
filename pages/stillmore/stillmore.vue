@@ -18,7 +18,7 @@
 			    </navigator>
 			<navigator url="/pages/stillmore/ContactUs" @click="navigateTo">
 			      <view  class="ContactUs" >
-			        <text class="ContactUsText">预约展览</text>
+			        <text class="ContactUsText">联系我们</text>
 			        <image src="../../static/页面4/3.png" class="ContactUsImg"></image>
 			      </view>
 			    </navigator>
