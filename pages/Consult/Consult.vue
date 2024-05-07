@@ -3,28 +3,15 @@
 	<customTabBar Title="趣学资讯"></customTabBar>
 	<view class="bgc">
 		<view class="seach">
-			<uni-search-bar placeholder="请输入搜索内容" @confirm="search" @cancel="cancel" cancel-text="取消">
-				<uni-icons slot="searchIcon" color="#989898" size="18" type="home" />
+			<uni-search-bar placeholder="请输入搜索内容" @confirm="search" @cancel="cancel" cancel-text="取消" v-model="this.contents">
+				<uni-icons slot="searchIcon" color="#989898" size="18" type="home"/>
 			</uni-search-bar>
 		</view>
-		<view class="Information">
-			<image src="../../static/页面4/4.png" mode="aspectfit" class="heritage-image"></image>
-			<view class="content">
-				<text class="title">非遗介绍</text>
-				<text>温，广西壮族自治区南宁市地方传统戏剧，</text>
-			</view>
-		</view>
-		<view class="figure">
-			<image src="../../static/页面4/4.png" mode="aspectfit" class="heritage-image"></image>
-			<view class="content">
-				<text class="title">非遗介绍(人物)</text>
-				<text>温，广西壮族自治区南宁市地方传统戏剧，</text>
-			</view>
-		</view>
-		<view class="AiChat">
+	
+		<view class="AiChat" v-if="this.results != '' ">
 			<view class="AiChatContents">
 				<view class="AIcontent">
-					<text class="AItext">以上内容是根据您的喜好,定制推送的内容,你还可以想我询问想了解的问题</text>
+					<text class="AItext">{{this.results.result}}</text>
 				</view>
 				<image src="../../static/页面2/2.png" mode="aspectfit" class="AiChatImg"></image>
 			</view>
@@ -41,7 +28,11 @@
 		},
 		data() {
 			return {
-
+				// 给AI的数据
+				contents:"",
+				// AI返回的数据
+				results:""
+				
 			}
 		},
 		methods: {
@@ -50,13 +41,62 @@
 					title: '搜索：' + res.value,
 					icon: 'none'
 				})
+				
+				
+				// 接入AI功能
+				uniCloud.callFunction({
+					name:"openkimiAI",
+					data:{
+						// 传入数据
+						contents:this.contents
+					}
+				}).then(res => {
+					this.results = res
+					if(this.results.result == ''){
+						console.log(0)
+					}else{
+						console.log(1)
+					}
+					this.contents = ''
+				})
+				
 			},
 			cancel(res) {
 				uni.showToast({
 					title: '点击取消，输入值为：' + res.value,
 					icon: 'none'
 				})
+			},
+			
+			
+			// 跳转过来的时候给的问候语
+			openAi(){
+				uniCloud.callFunction({
+					name:"openkimiAI",
+					data:{
+						// 传入数据
+						contents:"你好~很高兴认识你呀~"
+					}
+				}).then(res => {
+					this.results = res
+					if(this.results.result == ''){
+						console.log(0)
+					}else{
+						console.log(1)
+					}
+					this.contents = ''
+				})
+				
 			}
+		
+			
+			
+			
+		},onLoad() {
+			// 打开页面自动调用函数
+			this.openAi()
+			
+			
 		}
 	}
 </script>
