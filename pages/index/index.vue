@@ -159,7 +159,7 @@
 		&:nth-child(n + 2) {
 			margin-left: 42rpx;
 			margin-right: 42rpx;
-			margin-top: 12rpx;
+			margin-top: 16rpx;
 	  	  	}
 	  	}
 	}

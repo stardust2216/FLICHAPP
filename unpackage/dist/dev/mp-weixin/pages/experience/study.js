@@ -20,18 +20,29 @@ const _sfc_main = {
           location: "南宁·宾阳",
           imageUrl: "/static/uni.png"
         }
-      ]
+      ],
+      heritagelist: []
     };
+  },
+  methods: {},
+  onLoad() {
+    common_vendor.Ws.callFunction({
+      name: "ExStudyGet"
+    }).then((res) => {
+      this.heritagelist = res.result.data;
+      console.log(this.heritagelist);
+    });
   }
 };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.f($data.heritageData, (item, index, i0) => {
+    a: common_vendor.f($data.heritagelist, (item, index, i0) => {
       return {
-        a: item.imageUrl,
+        a: item.image,
         b: common_vendor.t(item.title),
-        c: common_vendor.t(item.location),
-        d: index
+        c: common_vendor.t(item.tag),
+        d: common_vendor.t(item.address),
+        e: index
       };
     })
   };

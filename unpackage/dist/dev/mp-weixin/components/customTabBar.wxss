@@ -12,7 +12,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* 垂直居中 */
 }
 .navbar .titleBar .left {
   margin-left: 42rpx;
@@ -22,15 +21,19 @@
   font-family: "MyCustomFont";
   color: #696a60;
   font-size: 40rpx;
+  font-weight: bold;
 }
 .navbar .titleBar .right {
   display: flex;
   align-items: center;
-  /* 垂直居中 */
   margin-right: 190rpx;
 }
 .navbar .titleBar .right image {
-  width: 34rpx;
-  height: 34rpx;
+  width: 45rpx;
+  height: 45rpx;
   margin-right: 25rpx;
+}
+.navbar .titleBar .right text {
+  font-size: 25rpx;
+  font-weight: bold;
 }

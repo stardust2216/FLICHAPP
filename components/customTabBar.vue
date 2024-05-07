@@ -54,7 +54,7 @@
 			height: 70rpx;
 			display: flex;
 			justify-content: space-between;
-			align-items: center; /* 垂直居中 */
+			align-items: center;
             .left {
                 margin-left: 42rpx;
                 float: left;
@@ -62,17 +62,22 @@
 					font-family: 'MyCustomFont';
 					color: #696a60;
 					font-size: 40rpx;
+					font-weight: bold;
 				}
             }
             .right {
 				display: flex;
-				align-items: center; /* 垂直居中 */
+				align-items: center;
                 margin-right: 190rpx;
                 image {
-                    width: 34rpx;
-                    height: 34rpx;
+                    width: 45rpx;
+                    height: 45rpx;
                     margin-right: 25rpx;
                 }
+				text {
+					font-size: 25rpx;
+					font-weight: bold;
+				}
             }
         }
     }

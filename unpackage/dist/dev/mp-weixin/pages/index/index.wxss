@@ -9,7 +9,11 @@ page {
 page > view:nth-child(n+2) {
   margin-left: 42rpx;
   margin-right: 42rpx;
-  margin-top: 12rpx;
+  margin-top: 16rpx;
+}
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../static/fonts/SourceHanSerifCN-Light-5.otf") format("opentype");
 }
 .bg {
   position: absolute;
@@ -19,6 +23,10 @@ page > view:nth-child(n+2) {
   width: 100%;
   height: 100%;
   z-index: -999;
+}
+.title {
+  font-family: "MyCustomFont";
+  font-weight: bold;
 }
 .swiper swiper {
   height: 440rpx;
@@ -45,6 +53,8 @@ page > view:nth-child(n+2) {
 .swiper swiper swiper-item .T1 text {
   font-size: 40rpx;
   color: #FFF;
+  font-weight: bolder;
+  font-family: "MyCustomFont";
 }
 .swiper swiper swiper-item .T2 {
   display: flex;
@@ -58,6 +68,8 @@ page > view:nth-child(n+2) {
   height: 30rpx;
   border-radius: 10px;
   font-weight: bold;
+  font-family: "MyCustomFont";
+  margin-top: 20rpx;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,15 +102,20 @@ page > view:nth-child(n+2) {
 .good-nav view text {
   font-size: 20rpx;
   width: 100rpx;
+  font-family: "MyCustomFont";
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.data {
+  font-family: "MyCustomFont";
 }
 .content image {
   width: 100%;
   border-radius: 16px;
 }
 .content text {
+  font-family: "MyCustomFont";
   display: flex;
   justify-content: center;
   align-items: center;

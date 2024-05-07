@@ -8,40 +8,52 @@
 	<view class="top">
 		<view class="top-image">
 			<view class="top-text">
-				<text class="top-title">非遗文化体验</text><br>
+				<text class="top-title">非遗文化体验</text>
 				<text class="top-english">Intangible Cultural Heritage Experience</text>
 			</view>
 		</view>
 		<view class="top-mask">
 		</view>
+	</view>
+	
+	<!-- 二级标题 -->
+	<view class="good-title">
+	  <text>在线课程</text>
+	</view>
 		
-		<view class="good-title">
-		  <text>在线课程</text>
+	<!-- 课程导航 -->
+	<view class="good-nav">
+		<view class="good-kc">
+			<view class="good-text">
+				<text class="good-text-A">纯植物颜料扎染学习</text><br>
+				<view class="good-text-B"></view><br>
+				<text class="good-text-C">植物扎染</text>
+			</view>
+			<view class="bg-image"></view>
 		</view>
-		
-		<view class="good-nav">
-			<view class="good-kc">
-				<view class="good-text">
-					<text>纯植物颜料扎染学习</text><br>
-					<text>植物扎染</text>
-				</view>
-				<view class="bg-image"></view>
+		<view class="good-kc">
+			<view class="good-text">
+				<text class="good-text-A">大师竹编制作学习</text><br>
+				<view class="good-text-B"></view><br>
+				<text class="good-text-C">灵山竹编</text>
 			</view>
-			<view class="good-kc">
-				<text>纯植物颜料扎染学习</text>
-				<text>植物扎染</text>
-				<view class="bg-image"></view>
+			<view class="bg-image"></view>
+		</view>
+		<view class="good-kc">
+			<view class="good-text">
+				<text class="good-text-A">凉棕制作学习</text><br>
+				<view class="good-text-B"></view><br>
+				<text class="good-text-C">凉棕制作</text>
 			</view>
-			<view class="good-kc">
-				<text>纯植物颜料扎染学习</text>
-				<text>植物扎染</text>
-				<view class="bg-image"></view>
+			<view class="bg-image"></view>
+		</view>
+		<view class="good-kc">
+			<view class="good-text">
+				<text class="good-text-A">马蜂酒制作学习</text><br>
+				<view class="good-text-B"></view><br>
+				<text class="good-text-C">苗族蜡染</text>
 			</view>
-			<view class="good-kc">
-				<text>纯植物颜料扎染学习</text>
-				<text>植物扎染</text>
-				<view class="bg-image"></view>
-			</view>
+			<view class="bg-image"></view>
 		</view>
 	</view>
 </template>
@@ -66,7 +78,7 @@
 	  	&:nth-child(n + 2) {
 	  		margin-left: 42rpx;
 	  		margin-right: 42rpx;
-	  		margin-top: 12rpx;
+	  		margin-top: 16rpx;
 	    	}
 		}
 	}
@@ -88,8 +100,8 @@
 			width: 100%;
 			height: 340rpx;
 			position: absolute;
-			background-image: linear-gradient(180deg, transparent, rgba(191, 227, 227, 50)),
-			url("../../static/IMG_5779.jpg");
+			background-image: linear-gradient(180deg, transparent, transparent, rgba(191, 227, 227, 50)),
+			url("https://www.freeimg.cn/i/2024/05/02/6633985c63bb3.jpg");
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -98,11 +110,15 @@
 			.top-text {
 				margin-top: 330rpx;
 				margin-left: 40rpx;
+				display: flex;
+				flex-direction: column;
 				.top-title {
-					font-size: 50rpx;
+					font-weight: bold;
+					font-size: 60rpx;
 				}
 				.top-english {
-					font-size: 10rpx;
+					font-weight: bold;
+					font-size: 20rpx;
 				}
 			}
 			
@@ -118,47 +134,70 @@
 				z-index: 1;
 			}
 		}
-		
-		.good-nav {
-			height: 500rpx;
-			display: flex;
-			justify-content: space-between;
-			background-color: aqua;
+	}
+	.good-title {
+		padding-top: 70rpx;
+		text {
+			font-weight: bold;
+			font-size: 32rpx;
+		}
+	}
+	
+	.good-nav {
+		height: 650rpx;
+		margin-top: 60rpx !important;
+		display: flex;
+		justify-content: space-between;
+		.good-kc {
+			height: 450rpx;
+			width: 140rpx;
+			border-bottom-left-radius: 80rpx;
+			border-bottom-right-radius: 80rpx;
+			overflow: hidden;
+			position: relative;
+			.good-text {
+				z-index: 1;
+				writing-mode: vertical-rl;
+				text-orientation: mixed;
+				float: right;
+				padding: 10rpx;
+				.good-text-A {
+					font-size: 20rpx;
+					letter-spacing: 12rpx;
+					color: #ba8836;
+				}
+				.good-text-B {
+					height: 140rpx;
+					margin-left: 4rpx;
+					margin-right: 4rpx;
+					border-right: 2px solid #ba8836;
+				}
+				.good-text-C {
+					font-weight: bold;
+					letter-spacing: 12rpx;
+					color: #ba8836;
+				}
+			}
 			
-			.good-kc {
-				height: 335rpx;
-				width: 135rpx;
-				border-bottom-left-radius: 80rpx;
-				border-bottom-right-radius: 80rpx;
-				overflow: hidden;
-				position: relative;
-				.good-text {
-					z-index: 2;
-					writing-mode: vertical-rl;
-					text-orientation: mixed;
-					float: right;
-					padding: 10rpx;
-				}
-				
-				.bg-image {
-					z-index: 1;
-					position: absolute;
-					top: 50rpx;
-					height: 100%;
-					width: 100%;
-					background-image: url("../../static/image.png");
-					background-size: cover;
-					background-position: center;
-					background-repeat: no-repeat;
-				}
-				
-				&:nth-child(2) {
-					margin-top: 165rpx;
-				}
-				
-				&:nth-child(4) {
-					margin-top: 165rpx;
-				}
+			.bg-image {
+				z-index: -1;
+				position: absolute;
+				top: 65rpx;
+				height: 100%;
+				width: 100%;
+				background: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.5), rgba(255,255,255,0.2), rgba(0,0,0,0)),
+				url("../../static/image.png");
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			
+			&:nth-child(2) {
+				margin-top: 200rpx;
+			}
+			
+			&:nth-child(4) {
+				margin-top: 200rpx;
 			}
 		}
 	}
