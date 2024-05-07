@@ -1,7 +1,8 @@
 
 .bgc.data-v-d264e651 {
+		background-image: url('../static/strat-bgc.jpg');
 		background-image: url('https://www.freeimg.cn/i/2024/05/06/6638eb90e4db6.jpg');
-		background-size: cover; 
+		background-size: cover;
 		height: 100%;
 		width: 100%;
 		position: absolute;
@@ -58,7 +59,7 @@
 	/* 单独为趣学非遗文字设置样式 */
 .feiyi-label.data-v-d264e651 {
 		font-size: 25px;
-		color: black; 
+		color: black;
 		font-weight: normal;
 }
 .bottom.data-v-d264e651 {

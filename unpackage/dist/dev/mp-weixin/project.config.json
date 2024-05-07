@@ -1,26 +1,25 @@
 {
-  "description": "项目配置文件。",
+  "appid": "wxa735aad9439b26c8",
+  "compileType": "miniprogram",
+  "libVersion": "3.4.3",
   "packOptions": {
     "ignore": [],
     "include": []
   },
   "setting": {
-    "urlCheck": false,
+    "coverView": true,
     "es6": true,
-    "postcss": false,
-    "minified": false,
-    "newFeature": true,
-    "bigPackageSizeSupport": true,
+    "postcss": true,
+    "minified": true,
+    "enhance": true,
+    "showShadowRootInWxmlPanel": true,
+    "packNpmRelationList": [],
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     }
   },
-  "compileType": "miniprogram",
-  "libVersion": "3.4.3",
-  "appid": "touristappid",
-  "projectname": "FLICHAPP",
   "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",

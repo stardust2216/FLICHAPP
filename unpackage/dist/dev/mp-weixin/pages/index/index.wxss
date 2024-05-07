@@ -15,6 +15,10 @@ page > view:nth-child(n+2) {
   font-family: "MyCustomFont";
   src: url("../static/fonts/SourceHanSerifCN-Light-5.otf") format("opentype");
 }
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../static/fonts/SourceHanSerifCN-Light-5.otf") format("opentype");
+}
 .bg {
   position: absolute;
   left: 0;

@@ -7249,8 +7249,8 @@ const tabBar = {
     },
     {
       pagePath: "pages/index/index",
-      iconPath: "static/趣学非遗.png",
-      selectedIconPath: "static/趣学非遗2.png",
+      iconPath: "static/趣学非遗2.png",
+      selectedIconPath: "static/趣学非遗.png",
       text: "趣学非遗"
     },
     {

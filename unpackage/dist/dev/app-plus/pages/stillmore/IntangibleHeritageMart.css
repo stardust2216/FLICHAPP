@@ -1,0 +1,65 @@
+/* 水平间距 */
+/* 水平间距 */
+.bgc {
+  padding: 0.78125rem;
+  margin-top: 0.625rem;
+}
+.martHead {
+  background-image: linear-gradient(to bottom, #d7c8b7, #e5e3d9, #ecf2ec);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 0.3125rem;
+  margin: auto;
+  padding-top: 0.625rem;
+  margin-bottom: 0.9375rem;
+  width: 21.875rem;
+  height: 9.375rem;
+}
+.martHead uni-image {
+  width: 10rem;
+  height: 6.875rem;
+  margin-right: 0.9375rem;
+  margin-top: 0.46875rem;
+  border-radius: 0.15625rem;
+}
+.martHead uni-text {
+  font-family: "MyCustomFontBold";
+  font-size: 1.25rem;
+  margin-left: 0.625rem;
+  margin-top: 1.5625rem;
+}
+.mart {
+  width: 21.875rem;
+  height: 21.875rem;
+  padding: 0.78125rem;
+  margin-top: 1.25rem;
+  background-color: #dcd3ca;
+  border-radius: 0.3125rem;
+}
+.martText {
+  font-family: "MyCustomFont";
+  font-weight: bold;
+  color: #7f8350;
+  font-size: 1.25rem;
+}
+.martImg {
+  position: absolute;
+}
+.img1 {
+  height: 18.75rem;
+  width: 22.5rem;
+  right: 6.25rem;
+}
+.img2 {
+  height: 15rem;
+  width: 18.75rem;
+  left: 6.25rem;
+  bottom: 23.4375rem;
+}
+.img3 {
+  height: 14.0625rem;
+  width: 20.3125rem;
+  left: 4.6875rem;
+  bottom: 28.125rem;
+}
