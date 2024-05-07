@@ -1,4 +1,11 @@
 <template>
+	
+	<!-- 导航栏 -->
+	<customTabBar Title="趣学非遗"></customTabBar>
+	
+	<!-- 背景图 -->
+	<image class="bg" src='../../static/background-img.png'></image>
+	
 	<!-- 标题 -->
 	<view class="title">
 	  <text>城市非遗</text>
@@ -93,27 +100,27 @@
 	<!-- 导航栏 -->
 	<view class="good-nav">
 	  <view>
-	    <image src="../../static/页面1/1.png" mode=""/>
-	    <text>传统手工艺</text>
+	    <image src="../../static/页面1/1huanban1.png" mode=""/>
+	    <text>传统手艺</text>
 	  </view>
 	  <view>
-	    <image src="../../static/页面1/2.png" mode=""/>
+	    <image src="../../static/页面1/2hauban2.png" mode=""/>
 	    <text>传统音乐</text>
 	  </view>
 	  <view>
-	    <image src="../../static/页面1/3.png" mode=""/>
+	    <image src="../../static/页面1/3huabna3.png" mode=""/>
 	    <text>传统戏剧</text>
 	  </view>
 	  <view>
-	    <image src="../../static/页面1/4.png" mode=""/>
+	    <image src="../../static/页面1/4huaban4.png" mode=""/>
 	    <text>传统美术</text>
 	  </view>
 	  <view>
-	    <image src="../../static/页面1/5.png" mode=""/>
+	    <image src="../../static/页面1/5huaban5.png" mode=""/>
 	    <text>传统技艺</text>
 	  </view>
 	  <view>
-	    <image src="../../static/页面1/6.png" mode=""/>
+	    <image src="../../static/页面1/6huaban6.png" mode=""/>
 	    <text>传统民俗</text>
 	  </view>
 	</view>
@@ -133,35 +140,51 @@
 </template>
 
 <script>
+	import customTabBar from "../../components/customTabBar.vue"
 	export default {
-		
+		components: {
+		      customTabBar
+		},
 	}
 </script>
 
 <style lang="scss">
 	page {
 	  height: 100vh;
-	  background-color: #efefef !important;
-	  padding: 16rpx;
 	  box-sizing: border-box;
 	  display: flex;
 	  flex-direction: column;
-	
-	  > view {
-	    &:nth-child(n + 2) {
-	      margin-top: 16rpx;
-	    }
-	  }
+	  
+	> view {
+		&:nth-child(n + 2) {
+			margin-left: 42rpx;
+			margin-right: 42rpx;
+			margin-top: 12rpx;
+	  	  	}
+	  	}
+	}
+	@font-face {
+		font-family: 'MyCustomFont';
+		src: url('../static/fonts/SourceHanSerifCN-Light-5.otf') format('opentype');
+	}
+	.bg {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		z-index: -999;
 	}
 	
 	.title {
-	  padding-left: 26rpx;
+		font-family: 'MyCustomFont';
+		font-weight: bold;
 	}
 	
 	
 	.swiper {
-	  padding-left: 26rpx;
-	  swiper {
+		swiper {
 	    height: 440rpx;
 	    background-color: skyblue;
 	    swiper-item {
@@ -184,7 +207,8 @@
 	        text {
 	          font-size: 40rpx;
 	          color: #FFF;
-			  
+			  font-weight: bolder;
+			  font-family: 'MyCustomFont';
 	        }
 	      }
 	
@@ -193,15 +217,17 @@
 	        flex-direction: row;
 	        height: 80rpx;
 	        navigator {
-	          font-size: 18rpx;
-	          background-color: #FFF;
-	          width: 90rpx;
-	          height: 30rpx;
-	          border-radius: 10px;
-	          font-weight: bold;
-	          display: flex;
-	          justify-content: center;
-	          align-items: center;
+				font-size: 18rpx;
+				background-color: #FFF;
+				width: 90rpx;
+				height: 30rpx;
+				border-radius: 10px;
+				font-weight: bold;
+				font-family: 'MyCustomFont';
+				margin-top: 20rpx;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 	        }
 	      }
 	
@@ -220,43 +246,43 @@
 	}
 	
 	.good-nav {
-	  display: flex;
-	  justify-content: space-between;
-	  padding: 30rpx 16rpx;
-	  border-radius: 10rpx;
-	  view {
-	    display: flex;
-	    flex-direction: column;
-	    image {
-	      width: 100rpx;
-	      height: 100rpx;
-	      border-radius: 60px;
-	    }
-	    text {
-	      font-size: 20rpx;
-	      width: 100rpx;
-	      display: flex;
-	      justify-content: center;
-	      align-items: center;
-	    }
-	  }
+		display: flex;
+		justify-content: space-between;
+		padding: 30rpx 16rpx;
+		border-radius: 10rpx;
+		view {
+		display: flex;
+		flex-direction: column;
+		image {
+			width: 100rpx;
+			height: 100rpx;
+			border-radius: 60px;
+		}
+			text {
+				font-size: 20rpx;
+				width: 100rpx;
+				font-family: 'MyCustomFont';
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
 	}
 	
 	.data {
-	  padding-left: 26rpx;
+		font-family: 'MyCustomFont';
 	}
 	
-	.content {
-	  padding: 24rpx 26rpx;
-	  image {
-	    width: 100%;
-	    border-radius: 16px;
-	    
-	  }
-	  text {
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
-	  }
+	.content { 
+		image {
+			width: 100%;
+			border-radius: 16px;
+		}
+		text {
+			font-family: 'MyCustomFont';
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 </style>

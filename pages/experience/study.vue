@@ -64,11 +64,6 @@
 
 <style lang="scss">
 	.bgc {
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		background-image: url('../../static/background-img.png');
-		background-size: cover;
 		padding-top: 80rpx;
 	}
 

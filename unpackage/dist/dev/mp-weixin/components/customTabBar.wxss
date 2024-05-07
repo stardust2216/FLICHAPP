@@ -1,0 +1,36 @@
+/* 水平间距 */
+/* 水平间距 */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../static/fonts/XiangJiaoDaJiangJunLingGanTi-2.ttf") format("opentype");
+}
+.navbar {
+  z-index: 10;
+}
+.navbar .titleBar {
+  height: 70rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 垂直居中 */
+}
+.navbar .titleBar .left {
+  margin-left: 42rpx;
+  float: left;
+}
+.navbar .titleBar .left text {
+  font-family: "MyCustomFont";
+  color: #696a60;
+  font-size: 40rpx;
+}
+.navbar .titleBar .right {
+  display: flex;
+  align-items: center;
+  /* 垂直居中 */
+  margin-right: 190rpx;
+}
+.navbar .titleBar .right image {
+  width: 34rpx;
+  height: 34rpx;
+  margin-right: 25rpx;
+}

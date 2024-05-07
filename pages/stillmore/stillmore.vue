@@ -1,4 +1,7 @@
 <template>
+	<!-- 导航栏 -->
+	<customTabBar Title="趣学更多"></customTabBar>
+	
 	<view class="bgc">
 		<view class="square">
 			<navigator url="/pages/stillmore/IntangibleHeritageMart"  @click="navigateTo">
@@ -15,7 +18,7 @@
 			    </navigator>
 			<navigator url="/pages/stillmore/ContactUs" @click="navigateTo">
 			      <view  class="ContactUs" >
-			        <text class="ContactUsText">预约展览</text>
+			        <text class="ContactUsText">联系我们</text>
 			        <image src="../../static/页面4/3.png" class="ContactUsImg"></image>
 			      </view>
 			    </navigator>
@@ -31,8 +34,12 @@
 </template>
 
 <script>
+	import customTabBar from "../../components/customTabBar.vue"
 export default {
-  methods: {
+	components: {
+		  customTabBar
+	},
+	methods: {
     navigateTo(event) {
       // 从事件对象中获取url，并执行页面跳转
       const url = event.currentTarget.dataset.url;
@@ -54,11 +61,6 @@ export default {
 
 <style scoped>
 	.bgc{
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		background-image: url('../../static/background-img.png');
-		background-size: cover; 
 		padding-top: 100rpx;
 		
 	}

@@ -28,12 +28,12 @@ export default {
 			icons: [{
 					src: '../static/首页/keCheng.png',
 					label: '趣学课程',
-					pagePath: 'Consult/Consult'
+					pagePath: 'Lesson/Lesson'
 				},
 				{
 					src: '../static/首页/zixun.png',
 					label: '趣学资讯',
-					pagePath: 'Lesson/Lesson'
+					pagePath: 'Consult/Consult'
 				},
 				{
 					src: '../static/首页/feiYi.png',
@@ -91,7 +91,7 @@ export default {
 
 <style scoped>
 	.bgc {
-		background-image: url('../static/strat-bgc.jpg');
+		background-image: url('https://www.freeimg.cn/i/2024/05/06/6638eb90e4db6.jpg');
 		background-size: cover; 
 		height: 100%;
 		width: 100%;
