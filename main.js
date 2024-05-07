@@ -5,10 +5,6 @@ import uView from 'uview-ui'
 Vue.use(uView)
 Vue.config.productionTip = false
 
-// 自定义组件
-import customTabBar from "./components/customTabBar.vue"
-Vue.component('customTabBar', customTabBar)
-
 App.mpType = 'app'
 // 第三方字体库调用
 const font = require('./static/fonts/font.js')

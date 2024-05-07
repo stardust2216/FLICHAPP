@@ -68,7 +68,7 @@
             .right {
 				display: flex;
 				align-items: center;
-                margin-right: 190rpx;
+                margin-right: 210rpx;
                 image {
                     width: 45rpx;
                     height: 45rpx;
