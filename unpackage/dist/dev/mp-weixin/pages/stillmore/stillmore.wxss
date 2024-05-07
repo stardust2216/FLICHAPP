@@ -1,10 +1,5 @@
 
 .bgc.data-v-063c1d97{
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		background-image: url('../../static/background-img.png');
-		background-size: cover; 
 		padding-top: 100rpx;
 }
 .square.data-v-063c1d97{
@@ -76,7 +71,7 @@
 }
 .ContactUsText.data-v-063c1d97{
 		font-size: 22px;
-		font-weight: bolder;
+		/* font-weight: bolder; */
 		margin:120rpx 10rpx;
 		font-family: 'MyCustomFont';
 }

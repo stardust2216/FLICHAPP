@@ -21,78 +21,79 @@
 </template>
 
 <script>
-export default {
-	data() {
-		return {
-			// 图标数据，包含图标路径、文字和对应跳转页面的路径
-			icons: [{
-					src: '../static/首页/keCheng.png',
-					label: '趣学课程',
-					pagePath: 'Lesson/Lesson'
-				},
-				{
-					src: '../static/首页/zixun.png',
-					label: '趣学资讯',
-					pagePath: 'Consult/Consult'
-				},
-				{
-					src: '../static/首页/feiYi.png',
-					label: '趣学非遗',
-					pagePath: 'index/index'
-				},
-				{
-					src: '../static/首页/tiYan.png',
-					label: '趣学体验',
-					pagePath: 'experience/experience'
-				},
-				{
-					src: '../static/首页/gengDuo.png',
-					label: '趣学更多',
-					pagePath: 'stillmore/stillmore'
-				}
-			]
-		};
-	},
-	methods: {
-		// 动态获取每个图标的位置样式
-		getIconStyle(index) {
-			const positions = [{
-					top: '220rpx',
-					right: '240rpx'
-				},
-				{
-					top: '480rpx',
-					left: '50rpx'
-				},
-				{
-					top: '450rpx',
-					right: '230rpx'
-				},
-				{
-					top: '540rpx',
-					right: '10rpx'
-				},
-				{
-					top: '790rpx',
-					left: '200rpx'
-				}
-			];
-			return positions[index] || {};
+	export default {
+		data() {
+			return {
+				// 图标数据，包含图标路径、文字和对应跳转页面的路径
+				icons: [{
+						src: '../static/首页/keCheng.png',
+						label: '趣学课程',
+						pagePath: 'Lesson/Lesson'
+					},
+					{
+						src: '../static/首页/zixun.png',
+						label: '趣学资讯',
+						pagePath: 'Consult/Consult'
+					},
+					{
+						src: '../static/首页/feiYi.png',
+						label: '趣学非遗',
+						pagePath: 'index/index'
+					},
+					{
+						src: '../static/首页/tiYan.png',
+						label: '趣学体验',
+						pagePath: 'experience/experience'
+					},
+					{
+						src: '../static/首页/gengDuo.png',
+						label: '趣学更多',
+						pagePath: 'stillmore/stillmore'
+					}
+				]
+			};
 		},
-		// 页面跳转方法
-		switchToTabPage(pagePath) {
-			uni.switchTab({
-				url: pagePath
-			});
+		methods: {
+			// 动态获取每个图标的位置样式
+			getIconStyle(index) {
+				const positions = [{
+						top: '220rpx',
+						right: '240rpx'
+					},
+					{
+						top: '480rpx',
+						left: '50rpx'
+					},
+					{
+						top: '450rpx',
+						right: '230rpx'
+					},
+					{
+						top: '540rpx',
+						right: '10rpx'
+					},
+					{
+						top: '790rpx',
+						left: '200rpx'
+					}
+				];
+				return positions[index] || {};
+			},
+			// 页面跳转方法
+			switchToTabPage(pagePath) {
+				uni.switchTab({
+					url: pagePath
+				});
+			}
 		}
-	}
-};
+	};
 </script>
 
 <style scoped>
 	.bgc {
+		background-image: url('../static/strat-bgc.jpg');
 		background-image: url('https://www.freeimg.cn/i/2024/05/06/6638eb90e4db6.jpg');
-		background-size: cover; 
+		background-size: cover;
 		height: 100%;
 		width: 100%;
 		position: absolute;
@@ -152,14 +153,14 @@ export default {
 		font-size: 20px;
 		color: #696a60;
 		line-height: 40px;
-		
+
 	}
 
 	/* 单独为趣学非遗文字设置样式 */
 	.feiyi-label {
 		font-size: 25px;
-		color: black; 
-		font-weight: normal; 
+		color: black;
+		font-weight: normal;
 	}
 
 	.bottom {

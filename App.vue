@@ -31,7 +31,15 @@
 		background-image: url('https://www.freeimg.cn/i/2024/05/06/6638eb8ebd78a.png');
 		background-size: cover;
 	}
-	
+	@font-face {
+		font-family: 'MyCustomFont';
+		src: url('../static/fonts/SourceHanSerifCN-Light-5.otf') format('opentype');
+		
+	}
+	@font-face {
+		font-family: 'MyCustomFontBold';
+		src: url('../static/fonts/SourceHanSerifCN-Heavy-4.otf') format('opentype');
+	}
 	/* #endif */
 	.example-info {
 		font-size: 14px;

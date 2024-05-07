@@ -1,10 +1,41 @@
+/* 水平间距 */
+/* 水平间距 */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../../static/fonts/XiangJiaoDaJiangJunLingGanTi-2.ttf") format("opentype");
+}
+.navbar[data-v-d395f88f] {
+  z-index: 10;
+}
+.navbar .titleBar[data-v-d395f88f] {
+  height: 2.1875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 垂直居中 */
+}
+.navbar .titleBar .left[data-v-d395f88f] {
+  margin-left: 1.3125rem;
+  float: left;
+}
+.navbar .titleBar .left uni-text[data-v-d395f88f] {
+  font-family: "MyCustomFont";
+  color: #696a60;
+  font-size: 1.25rem;
+}
+.navbar .titleBar .right[data-v-d395f88f] {
+  display: flex;
+  align-items: center;
+  /* 垂直居中 */
+  margin-right: 5.9375rem;
+}
+.navbar .titleBar .right uni-image[data-v-d395f88f] {
+  width: 1.0625rem;
+  height: 1.0625rem;
+  margin-right: 0.78125rem;
+}
 
 .bgc[data-v-063c1d97]{
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		background-image: url('../../static/background-img.png');
-		background-size: cover; 
 		padding-top: 3.125rem;
 }
 .square[data-v-063c1d97]{
@@ -76,7 +107,7 @@
 }
 .ContactUsText[data-v-063c1d97]{
 		font-size: 22px;
-		font-weight: bolder;
+		/* font-weight: bolder; */
 		margin:3.75rem 0.3125rem;
 		font-family: 'MyCustomFont';
 }

@@ -85,5 +85,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   };
 }
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-d264e651"], ["__file", "D:/English/VX_Project/FLICHAPP/pages/start.vue"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-d264e651"], ["__file", "E:/FLICHAPP/pages/start.vue"]]);
 wx.createPage(MiniProgramPage);

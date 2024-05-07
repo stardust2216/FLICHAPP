@@ -1,11 +1,6 @@
 /* 水平间距 */
 /* 水平间距 */
 .bgc {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-image: url("../../static/background-img.png");
-  background-size: cover;
   padding-top: 80rpx;
 }
 .heritage-list {
