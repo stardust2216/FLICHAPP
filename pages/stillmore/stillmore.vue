@@ -131,7 +131,7 @@ export default {
 	}
 	.ContactUsText{
 		font-size: 22px;
-		font-weight: bolder;
+		/* font-weight: bolder; */
 		margin:120rpx 10rpx;
 		font-family: 'MyCustomFont';
 	}

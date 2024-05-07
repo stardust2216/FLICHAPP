@@ -1,16 +1,16 @@
 <template>
 	<view class="bgc">
 		<view class="heritage-list">
-			<view v-for="(item, index) in heritageData" :key="index" class="heritage-item">
+			<view v-for="(item, index) in heritagelist" :key="index" class="heritage-item">
 				
-				<image class="heritage-image" :src="item.imageUrl" />
+				<image class="heritage-image" :src="item.image" />
 				
 				<view class="heritage-text">
-					<text style="font-size: 35rpx;font-weight: bolder;">国家非物质文化遗产</text>
-					<text class="title">{{ item.title }}</text>
+					<text style="font-size: 35rpx;font-weight: bolder;">{{item.title}}</text>
+					<text class="title">{{ item.tag }}</text>
 					<view class="heritage-text-small">
 						<image src="../../static/页面3/location.png" mode=""></image>
-						<text class="location">{{ item.location }}</text>
+						<text class="location">{{ item.address }}</text>
 					</view>
 					
 				</view>
@@ -41,8 +41,23 @@
 						location: '南宁·宾阳',
 						imageUrl: '/static/uni.png'
 					},
-				]
+				],
+				heritagelist:[]	
 			};
+		},methods:{
+			
+			
+			
+			
+		},onLoad() {
+			uniCloud.callFunction({
+				name:"ExStudyGet"
+			}).then(res => {
+				this.heritagelist = res.result.data
+				console.log(this.heritagelist)
+			})
+			
+			
 		}
 	};
 </script>

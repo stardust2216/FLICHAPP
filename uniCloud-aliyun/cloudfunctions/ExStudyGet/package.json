@@ -1,0 +1,7 @@
+{
+  "name": "ExStudyGet",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
