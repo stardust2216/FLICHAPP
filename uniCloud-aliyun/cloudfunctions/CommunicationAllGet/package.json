@@ -1,0 +1,7 @@
+{
+  "name": "CommunicationAllGet",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

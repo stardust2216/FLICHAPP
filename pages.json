@@ -110,6 +110,20 @@
 				"navigationBarTitleText" : "线下研学",
 				"enablePullDownRefresh" : false
 			}
+		},
+		{
+			"path" : "pages/stillmore/Newdiscuss",
+			"style" : 
+			{
+				"navigationBarTitleText" : "新建内容"
+			}
+		},
+		{
+			"path" : "pages/stillmore/CommunicationDetails",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
 		}
 	],
 	"globalStyle": {

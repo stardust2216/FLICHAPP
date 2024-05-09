@@ -6,13 +6,23 @@
 }
 .CommunicationHead {
   width: 700rpx;
-  height: 500rpx;
+  min-height: 300rpx;
   background: #988576;
   border-radius: 40rpx;
   margin-bottom: 40rpx;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+.CommunicationHead .CommunicationHead_text_title {
+  padding: 0 10rpx 5rpx 10rpx;
+}
+.CommunicationHead .CommunicationHead_text_content {
+  padding: 0 15rpx 10rpx 15rpx;
+}
+.CommunicationHead .CommunicationHead_text_but {
+  width: 700rpx;
+  height: 100rpx;
 }
 .avatarhead {
   display: flex;
@@ -29,6 +39,7 @@
   width: 150rpx;
   height: 150rpx;
   padding: 25rpx;
+  overflow: hidden;
 }
 .discussion {
   display: flex;
@@ -40,7 +51,7 @@
   flex-direction: row;
   justify-content: flex-start;
   width: 700rpx;
-  height: 250rpx;
+  height: auto;
   margin-bottom: 20rpx;
   background-color: #e5d7ca;
   border-radius: 15rpx;
@@ -49,7 +60,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 50rpx;
+  margin-left: 20rpx;
+  white-space: normal;
+  overflow: hidden;
+  flex: 1;
+  padding: 5rpx;
 }
 .username {
   font-family: "MyCustomFontBold";

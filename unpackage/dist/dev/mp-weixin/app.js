@@ -18,6 +18,8 @@ if (!Math) {
   "./pages/experience/AR.js";
   "./pages/experience/challenge.js";
   "./pages/experience/study.js";
+  "./pages/stillmore/Newdiscuss.js";
+  "./pages/stillmore/CommunicationDetails.js";
 }
 const _sfc_main = {
   onLaunch: function() {
@@ -31,7 +33,7 @@ const _sfc_main = {
     console.log("App Hide");
   }
 };
-const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "E:/FLICHAPP/App.vue"]]);
+const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "E:/IT_Study/Uniapp/FLICHAPP/App.vue"]]);
 function createApp() {
   const app = common_vendor.createSSRApp(App);
   return {

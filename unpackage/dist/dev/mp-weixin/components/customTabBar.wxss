@@ -26,7 +26,7 @@
 .navbar .titleBar .right {
   display: flex;
   align-items: center;
-  margin-right: 190rpx;
+  margin-right: 210rpx;
 }
 .navbar .titleBar .right image {
   width: 45rpx;

@@ -39,7 +39,8 @@
 			search(res) {
 				uni.showToast({
 					title: '搜索：' + res.value,
-					icon: 'none'
+					icon: 'none',
+					// 等待
 				})
 				
 				

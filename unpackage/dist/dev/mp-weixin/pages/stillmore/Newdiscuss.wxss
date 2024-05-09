@@ -1,0 +1,17 @@
+/* 水平间距 */
+/* 水平间距 */
+.body .Add .additem {
+  border: 1rpx solid #d4d4d4;
+  padding: 5rpx;
+  border-radius: 10rpx;
+  margin: 10rpx;
+}
+.body .Add .buttonitme {
+  padding: 5rpx;
+  border-radius: 10rpx;
+  margin: 10rpx;
+}
+.example {
+  padding: 15px;
+  background-color: #fff;
+}

@@ -1,0 +1,53 @@
+/* 水平间距 */
+/* 水平间距 */
+.avatarhead {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.avatarhead text {
+  font-family: "MyCustomFont";
+  font-size: 40rpx;
+  color: white;
+  margin-top: 70rpx;
+}
+.avatar {
+  width: 150rpx;
+  height: 150rpx;
+  padding: 25rpx;
+  overflow: hidden;
+}
+.discussion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 700rpx;
+  height: auto;
+  margin-bottom: 20rpx;
+  background-color: #e5d7ca;
+  border-radius: 15rpx;
+}
+.message-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20rpx;
+  white-space: normal;
+  overflow: hidden;
+  flex: 1;
+  padding: 5rpx;
+}
+.username {
+  font-family: "MyCustomFontBold";
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+.message-content text {
+  font-family: "MyCustomFont";
+  margin-top: 20rpx;
+}

@@ -15,7 +15,9 @@
     "pages/Consult/AiChat/AiChat",
     "pages/experience/AR",
     "pages/experience/challenge",
-    "pages/experience/study"
+    "pages/experience/study",
+    "pages/stillmore/Newdiscuss",
+    "pages/stillmore/CommunicationDetails"
   ],
   "window": {
     "navigationBarTextStyle": "black",

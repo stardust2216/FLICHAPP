@@ -5,62 +5,32 @@
 		background-size: cover;
 		height: 100%;
 		width: 100%;
-		position: absolute;
+}
+.img.data-v-d264e651 {
+		height: 80vh;
+		position: relative;
+		top: -100rpx;
+}
+.image.data-v-d264e651 {
+		width: 100%;
+		height: 100%;
 }
 .icon-container.data-v-d264e651 {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		padding: 10px;
+		position: relative;
 }
-.imgIcon.data-v-d264e651 {
+.icon-box.data-v-d264e651 {
 		position: absolute;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
+		width: 150rpx;
+		height: 150rpx;
+		background-color: rgba(0, 0, 0, 0);
 }
-.circle.data-v-d264e651 {
-		width: 70px;
-		height: 65px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 50%;
-		margin-bottom: 5px;
-}
-.icon.data-v-d264e651 {
-		width: 50px;
-		height: 45px;
-		margin-bottom: 5px;
-		border-radius: 50%;
-}
-.feiyi-icon.data-v-d264e651 {
-		width: 250rpx;
+.special-box.data-v-d264e651 {
+		width: 230rpx;
 		height: 240rpx;
-		background-color: transparent;
-}
-.feiyi-circle.data-v-d264e651 {
-		background-color: transparent;
 }
 @font-face {
 		font-family: 'CustomFont';
 		src: url('../static/fonts/XiangJiaoDaJiangJunLingGanTi-2.ttf') format('truetype');
-}
-.icon-label.data-v-d264e651 {
-		font-family: 'CustomFont';
-		font-size: 20px;
-		color: #696a60;
-		line-height: 40px;
-}
-
-	/* 单独为趣学非遗文字设置样式 */
-.feiyi-label.data-v-d264e651 {
-		font-size: 25px;
-		color: black;
-		font-weight: normal;
 }
 .bottom.data-v-d264e651 {
 		position: absolute;
