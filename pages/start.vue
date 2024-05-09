@@ -3,7 +3,7 @@
 
 
 		<view class="img">
-			<image src="../static/首页/circle-bgc.jpg" mode="aspectFit" class="image"></image>
+			<image src="https://www.freeimg.cn/i/2024/05/09/663c435f9036c.jpg" mode="aspectFit" class="image"></image>
 			<view class="icon-container">
 				<view v-for="(icon, index) in icons" :key="index" class="icon-box"
 					:class="{ 'special-box': index === 2 }" :style="getIconStyle(index)"

@@ -2,12 +2,7 @@
 	<!-- 导航栏 -->
 	<customTabBar Title="趣学资讯"></customTabBar>
 	<view class="bgc">
-		<view class="seach">
-			<uni-search-bar placeholder="请输入搜索内容" @confirm="search" @cancel="cancel" cancel-text="取消" v-model="this.contents">
-				<uni-icons slot="searchIcon" color="#989898" size="18" type="home"/>
-			</uni-search-bar>
-		</view>
-	
+
 		<view class="AiChat" v-if="this.results != '' ">
 			<view class="AiChatContents">
 				<view class="AIcontent">
@@ -16,6 +11,10 @@
 				<image src="../../static/页面2/2.png" mode="aspectfit" class="AiChatImg"></image>
 			</view>
 
+		</view>
+		<view class="input-group">
+			<input type="text" v-model="inputText" placeholder="Type a message..." />
+			<button @click="sendMessage">Send</button>
 		</view>
 	</view>
 </template>
@@ -29,10 +28,10 @@
 		data() {
 			return {
 				// 给AI的数据
-				contents:"",
+				contents: "",
 				// AI返回的数据
-				results:""
-				
+				results: ""
+
 			}
 		},
 		methods: {
@@ -41,25 +40,25 @@
 					title: '搜索：' + res.value,
 					icon: 'none'
 				})
-				
-				
+
+
 				// 接入AI功能
 				uniCloud.callFunction({
-					name:"openkimiAI",
-					data:{
+					name: "openkimiAI",
+					data: {
 						// 传入数据
-						contents:this.contents
+						contents: this.contents
 					}
 				}).then(res => {
 					this.results = res
-					if(this.results.result == ''){
+					if (this.results.result == '') {
 						console.log(0)
-					}else{
+					} else {
 						console.log(1)
 					}
 					this.contents = ''
 				})
-				
+
 			},
 			cancel(res) {
 				uni.showToast({
@@ -67,36 +66,37 @@
 					icon: 'none'
 				})
 			},
-			
-			
+
+
 			// 跳转过来的时候给的问候语
-			openAi(){
+			openAi() {
 				uniCloud.callFunction({
-					name:"openkimiAI",
-					data:{
+					name: "openkimiAI",
+					data: {
 						// 传入数据
-						contents:"你好~很高兴认识你呀~"
+						contents: "你好~很高兴认识你呀~"
 					}
 				}).then(res => {
 					this.results = res
-					if(this.results.result == ''){
+					if (this.results.result == '') {
 						console.log(0)
-					}else{
+					} else {
 						console.log(1)
 					}
 					this.contents = ''
 				})
-				
+
 			}
-		
-			
-			
-			
-		},onLoad() {
+
+
+
+
+		},
+		onLoad() {
 			// 打开页面自动调用函数
 			this.openAi()
-			
-			
+
+
 		}
 	}
 </script>
@@ -106,64 +106,9 @@
 		padding-top: 30rpx;
 	}
 
-	.Information {
-		position: absolute;
-		top: 100px;
-		padding: 20px;
-		left: 25rpx;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		background-image: linear-gradient(to bottom, #d9cdbc, #ded8ca, #eef7f3);
-		border-radius: 10rpx;
-		width: 700rpx;
-	}
-
 	@font-face {
 		font-family: 'MyCustomFont';
 		src: url('../static/fonts/SourceHanSerifCN-Light-5.otf') format('opentype');
-	}
-
-	.content {
-		margin-left: 25rpx;
-	}
-
-	.title {
-		font-family: 'MyCustomFont';
-		font-size: 24px;
-		margin-bottom: 20px;
-		color: #b29f89;
-	}
-
-	.content text {
-		display: block;
-		text-align: left;
-		line-height: 1.6;
-		margin-bottom: 10px;
-		color: #b29f89;
-		font-family: 'MyCustomFont';
-	}
-
-	.heritage-image {
-		width: 230rpx;
-		height: 200rpx;
-		/* 根据需要调整图片宽度 */
-		margin-top: 20px;
-		margin-left: -15rpx;
-
-	}
-
-	.figure {
-		position: absolute;
-		top: 300px;
-		padding: 20px;
-		left: 25rpx;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		background-image: linear-gradient(to bottom, #d9cdbc, #ded8ca, #eef7f3);
-		border-radius: 10rpx;
-		width: 700rpx;
 	}
 
 	.AiChat {
@@ -205,5 +150,12 @@
 		width: 100rpx;
 		height: 100rpx;
 		margin-left: 30rpx;
+	}
+
+	.input-group {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
 	}
 </style>

@@ -29,18 +29,18 @@
 			return {
 				head: {
 					username: '请叫我刘三姐',
-					avatar: '/static/页面4/sanjie_.png',
+					avatar: 'https://www.freeimg.cn/i/2024/05/09/663c30eba62e3.png',
 					title: '先去桂林还是阳朔?让三姐带你攻略桂林最美旅途风光!',
 					text: '桂林最值得看的就是象鼻山~但现在的象鼻山都是旅行团,嘈杂非常步道两侧都是低劣小商品,实在扫兴桂林作为一个老牌旅游城市,景点管理太差了除了象鼻山,桂林的滨江路和解放桥还可以走走其他就没啥好看的了大家想看象鼻山的话看我的图就行,没必要专门跑到桂林去看,当然这只是我的看法,大家看有啥更好的推荐敬请评论区下方留言~'
 				},
 				comment: [{
 						username: '阿牛哥',
-						avatar: '/static/页面4/aniuguo_.png',
+						avatar: 'https://www.freeimg.cn/i/2024/05/09/663c30eb5966e.png',
 						text: '象鼻山是在阳朔还是桂林？'
 					},
 					{
 						username: '爱旅游的小趴菜儿',
-						avatar: '/static/页面4/lanyangyang.png',
+						avatar: 'https://www.freeimg.cn/i/2024/05/09/663c30e86f91b.png',
 						text: '姐妹，我想问一下，遇龙河也是在兴坪古镇附近么？还是在阳朔县？我现在在桂林不知道是坐车到阳朔站还是兴坪古镇?'
 					}
 				]
