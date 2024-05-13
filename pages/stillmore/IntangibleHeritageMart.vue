@@ -14,6 +14,7 @@
 				<image class="img1" src="https://www.freeimg.cn/i/2024/05/09/663c30f4162a1.png" mode=""></image>
 				<image class="img2" src="https://www.freeimg.cn/i/2024/05/09/663c31008eba4.png" mode=""></image>
 				<image class="img3" src="https://www.freeimg.cn/i/2024/05/09/663c30f032322.png" mode=""></image>
+				
 			</view>
 			
 		</view>

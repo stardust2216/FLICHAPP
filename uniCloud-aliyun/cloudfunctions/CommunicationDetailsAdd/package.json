@@ -1,0 +1,7 @@
+{
+  "name": "CommunicationDetailsAdd",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
